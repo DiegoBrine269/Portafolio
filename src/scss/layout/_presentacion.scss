@@ -1,0 +1,57 @@
+.presentacion{
+    
+    height: 100%;
+    background-color: $blanco;
+    grid-row: 2/3;
+
+
+    @include tablet{
+        @include grid(2, 10rem);
+        height: 100%;
+        margin-top: 3rem;
+        
+    }
+
+    @include desktop{
+        max-height: 108rem;
+        margin-top: 0;
+    }
+
+    .imagen-programador{
+        display: block;
+        margin: 0 auto;
+        height: 20rem;
+
+        @include tablet{
+            margin-top: 5rem;
+            width: 50rem;
+            
+        }
+        @include desktop{
+            margin-top: 10rem;
+            height: 50rem;
+            width: 100rem;
+        }
+    }
+
+    .presentacion-info{
+        @include tablet{
+            margin-top: 3rem;
+        }
+
+        @include desktop{
+            margin-top: 20rem;
+        }
+
+        p{
+            color: $gris;
+            font-family: $fuentePrincipal;
+            font-size: 2.5rem;
+        }
+
+        .contenedor-botones{
+            display: flex;
+            justify-content: space-evenly;
+        } 
+    }
+}

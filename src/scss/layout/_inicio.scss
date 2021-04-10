@@ -1,0 +1,123 @@
+.inicio{
+    height: 100vh;
+    min-height: 60rem;
+    margin-bottom: 3rem;
+
+    @include phone{
+        margin-bottom: 0;
+    }
+
+    
+    // overflow: hidden;
+    .header{
+        background-color: $azulOscuro;
+        @include tablet{
+            background-color: $blanco;
+        }
+    }
+
+    @include tablet{
+        background-color: $blanco;
+        max-height: 60rem;
+    }
+
+    @include desktop{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: 10% 90%;
+        max-height: 108rem;
+    }
+    
+    .contenido-header{
+        text-align: center;
+
+        color: $blanco;
+        padding-top: 1rem;
+
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 8rem;
+        }
+    
+        @include tablet{
+            text-align: unset;
+        }
+    
+    
+        @include tablet{
+            background-color: $blanco;
+            color: $negro;
+    
+            .hamburger{
+                display: none;
+            }
+        }
+    
+        .navbar{
+            padding-bottom: 1rem;
+            display: block;
+            margin-bottom: 5rem;
+            @include tablet{
+                padding-bottom: 0;
+                margin-bottom: 2rem;
+            }
+
+            @include desktop{
+                margin-bottom: 0;
+            }
+        }
+            
+    
+    }
+    
+}
+
+.oculto{
+    visibility: hidden; /* Al alterar las márgenes y el height no es necesaria esta propiedad */
+    opacity: 0;
+    height: 0;
+    padding: 0;
+
+}
+
+.visible{
+    visibility: visible; /* Al alterar las márgenes y el height no es necesaria esta propiedad */
+    opacity: 1;
+    height: auto;
+    padding: 15px 0px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.enlace{
+    text-transform: uppercase;
+    color: $blanco;
+    font-size: 2.5rem;
+    display: block;
+    margin: 1rem;
+    text-align: center;
+    
+    @include tablet{
+        display: inline;
+        color: $gris;
+    }
+}
+
+.hamburger{
+    outline: none;
+}
+
+.hamburger:hover{
+    outline: none;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: $blanco;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+    background-color: $blanco;
+}

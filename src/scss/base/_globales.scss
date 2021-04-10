@@ -1,0 +1,87 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Radio Grotesk";
+    src: url("../../../fonts/RadioGrotesk-FreeForPersonalUse/RadioGrotesk-Regular.otf");
+}
+
+.contenedor{
+    max-width: 100rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-2{
+    max-width: calc(100rem + 16.66vw);
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2, h3, a{
+    margin: 0;
+    font-family: $fuentePrincipal;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+
+}
+
+
+p{
+    font-family: $fuenteSecundaria;
+    font-size: 2.2rem;
+}
+
+.btn{
+    background-color: $azulOscuro;
+    color: $blanco;
+    font-family: $fuenteSecundaria;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in;
+    outline: none;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
+    -moz-box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
+    box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background-color: $blanco;
+    color: $azulOscuro;
+    border: 1px solid $azulOscuro;
+}
+
+main{
+    margin-top: 5rem;
+}

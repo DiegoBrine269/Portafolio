@@ -1,0 +1,61 @@
+.presentacion-formal{
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+
+    .presentacion-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img{
+        width: 20rem;
+        display: block;
+        margin: 0 auto;
+
+        @include tablet{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    }
+
+    .img-oculta{
+        display: none;
+    }
+
+}
+
+.pasatiempos{
+
+    h3{
+        margin-bottom: 2rem;
+    }
+
+    .pasatiempos-iconos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include phone{
+            width: 60%;
+        }
+
+        @include tablet{
+            width: 50%;
+        }
+
+        @include desktop{
+            width: 35%;
+        }
+
+        svg{
+            background-color: $azulOscuro;
+            border-radius: 50%;
+            padding: 1rem;
+        }
+    }
+}

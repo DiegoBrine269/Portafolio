@@ -1,0 +1,26 @@
+{
+  "name": "portafolio2",
+  "version": "1.0.0",
+  "description": "Portafolio virtual de Diego Oloarte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Portfolio"
+  ],
+  "author": "Diego Oloarte",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-webp": "^4.0.1",
+    "hamburgers": "^1.1.3"
+  }
+}
