@@ -10,6 +10,12 @@
     }
 }
 
+@mixin pantallaLarga{
+    @media (min-height: 560px) {
+        @content;
+      }
+}
+
 @mixin desktop {
     @media (min-width: $desktop) {
         @content;
@@ -21,3 +27,4 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado
 }
+

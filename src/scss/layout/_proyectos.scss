@@ -1,0 +1,60 @@
+.proyectos{
+    @include tablet{
+        display: grid;
+        @include grid(3, 1fr);
+        gap: 5rem;
+    }
+
+    .proyecto{
+        border: 1px solid $gris;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        
+        @include tablet{
+            
+        }
+
+        .img-proyecto {
+            width: 100%;
+            height: 20rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;  
+           
+        }
+
+        #img-proyecto-1{
+            background-image: url("../img/proyecto-1.jpg"); 
+        }
+
+        #img-proyecto-2{
+            background-image: url("../img/proyecto-2.jpg"); 
+        }
+
+        #img-proyecto-3{
+            background-image: url("../img/proyecto-3.jpg"); 
+        }
+
+        .proyecto-titulo{
+            font-weight: 500;
+            margin: 2rem;
+        }
+
+        .btn{
+            width: 30%;
+            @include tablet{
+                width: 60%;
+            }
+
+            @include desktop{
+                width: 30%;
+            }
+            margin: 0 2rem 2rem auto;
+            background-color: $azulClaro;
+
+        }
+    }
+}

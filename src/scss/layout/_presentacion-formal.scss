@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: justify;
     }
 
     img{
@@ -30,6 +31,7 @@
 }
 
 .pasatiempos{
+    margin: 3rem 0;
 
     h3{
         margin-bottom: 2rem;
