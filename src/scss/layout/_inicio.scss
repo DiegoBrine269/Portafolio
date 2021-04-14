@@ -1,4 +1,6 @@
 .inicio{
+    
+
     height: 100vh;
     min-height: 60rem;
     margin-bottom: 3rem;
@@ -12,12 +14,17 @@
     .header{
         background-color: $azulOscuro;
         @include tablet{
-            background-color: $blanco;
+            background-color: #e2e8f0;
         }
+
+    }
+
+    .presentacion{
+        background-color: #e2e8f0;
     }
 
     @include tablet{
-        background-color: $blanco;
+        background-color: #e2e8f0;
         max-height: 60rem;
     }
 
@@ -47,7 +54,7 @@
     
     
         @include tablet{
-            background-color: $blanco;
+            background-color: #e2e8f0;
             color: $negro;
     
             .hamburger{
@@ -73,6 +80,8 @@
     }
     
 }
+
+
 
 .oculto{
     visibility: hidden; /* Al alterar las márgenes y el height no es necesaria esta propiedad */

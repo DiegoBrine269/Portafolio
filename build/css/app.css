@@ -1335,6 +1335,7 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  background-color: #e2e8f0;
 }
 
 *, *:before, *:after {
@@ -1438,12 +1439,15 @@ main {
 }
 @media (min-width: 768px) {
   .inicio .header {
-    background-color: #FFF;
+    background-color: #e2e8f0;
   }
+}
+.inicio .presentacion {
+  background-color: #e2e8f0;
 }
 @media (min-width: 768px) {
   .inicio {
-    background-color: #FFF;
+    background-color: #e2e8f0;
     max-height: 60rem;
   }
 }
@@ -1474,7 +1478,7 @@ main {
 }
 @media (min-width: 768px) {
   .inicio .contenido-header {
-    background-color: #FFF;
+    background-color: #e2e8f0;
     color: #000;
   }
   .inicio .contenido-header .hamburger {
@@ -1565,7 +1569,7 @@ main {
   text-align: center;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .barra-lateral p {
     display: inline;
   }
@@ -1576,7 +1580,7 @@ main {
   margin-bottom: 2rem;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .barra-lateral .contenedor-redes {
     display: flex;
   }
@@ -1753,14 +1757,17 @@ main {
   }
 }
 .proyectos .proyecto {
-  border: 1px solid #787878;
+  border: none;
   height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 3rem;
+  background-color: #FFF;
+  border-radius: 2rem;
 }
 .proyectos .proyecto .img-proyecto {
+  border-radius: 2rem 2rem 0 0;
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -1781,7 +1788,7 @@ main {
   margin: 2rem;
 }
 .proyectos .proyecto .btn {
-  width: 30%;
+  width: 35%;
   margin: 0 2rem 2rem auto;
   background-color: #00978D;
 }
@@ -1792,7 +1799,7 @@ main {
 }
 @media (min-width: 1200px) {
   .proyectos .proyecto .btn {
-    width: 30%;
+    width: 40%;
   }
 }
 
