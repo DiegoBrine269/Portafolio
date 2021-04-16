@@ -1,3 +1,9 @@
+#contenedor-proyectos{
+    p{
+        text-align: justify;
+    }
+}
+
 .proyectos{
     @include tablet{
         display: grid;

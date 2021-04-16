@@ -1395,14 +1395,14 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border-radius: 3rem;
   transition: all 0.3s ease-in;
   outline: none;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   -webkit-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.66);
   box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.66);
@@ -1677,6 +1677,7 @@ main {
 }
 .pasatiempos h3 {
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .pasatiempos .pasatiempos-iconos {
   width: 100%;
@@ -1729,7 +1730,7 @@ main {
 }
 .servicios .servicio .info-servicio .titulo-servicio {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .servicios .servicio .info-servicio .titulo-servicio {
@@ -1738,13 +1739,17 @@ main {
   }
 }
 .servicios .servicio .info-servicio .descripcion-serivicio {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #787878;
 }
 @media (min-width: 768px) {
   .servicios .servicio .info-servicio .descripcion-serivicio {
     font-size: 2.2rem;
   }
+}
+
+#contenedor-proyectos p {
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -1819,7 +1824,7 @@ main {
 }
 
 .info-contacto h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .info-contacto .forma-contacto {
   display: flex;
@@ -1844,5 +1849,5 @@ main {
   margin-top: 2rem;
   width: 30rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

@@ -65,14 +65,14 @@ p{
     font-family: $fuenteSecundaria;
     border: none;
     padding: 1rem 2rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-radius: 3rem;
     transition: all 0.3s ease-in;
     outline: none;
 }
 
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     -webkit-box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
     -moz-box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
     box-shadow: 10px 10px 30px -7px rgba(0,0,0,0.66);
