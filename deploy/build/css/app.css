@@ -1860,10 +1860,35 @@ main {
   margin-bottom: 0;
   padding: 2rem 0;
 }
-.footer-navbar .navbar a {
+@media (min-width: 768px) {
+  .footer-navbar .navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1fr;
+  }
+}
+
+.footer-group .titulo-enlace {
   text-align: left;
   margin: 2rem 0;
   display: block;
+  color: #FFF;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.footer-group .enlace {
+  font-size: 1.8rem;
+  text-align: left;
+  text-transform: initial;
+  font-weight: 500;
+  color: #CCC;
+  display: none;
+  font-family: "Radio Grotesk";
+}
+@media (min-width: 768px) {
+  .footer-group .enlace {
+    display: block;
+  }
 }
 
 footer {
@@ -1877,7 +1902,22 @@ footer .contenido-footer {
   align-items: center;
   margin-top: 0;
 }
+footer .contenido-footer .contenedor-redes svg {
+  width: 2.5rem;
+}
+@media (min-width: 768px) {
+  footer .contenido-footer .contenedor-redes svg {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+}
 footer .contenido-footer P {
   margin: 0;
+  font-size: 1.8rem;
   color: #FFF;
+}
+@media (min-width: 768px) {
+  footer .contenido-footer P {
+    font-size: 2rem;
+  }
 }

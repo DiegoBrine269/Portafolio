@@ -3,14 +3,36 @@
 
     .navbar{
         margin-bottom: 0;
-        padding: 2rem 0;        
+        padding: 2rem 0;          
+        
+        @include tablet{
+            @include grid(4, 1fr);
+        }
+    }
+}
 
-        a{
-            text-align: left;
-            margin: 2rem 0;
+.footer-group{
+    .titulo-enlace{
+        text-align: left;
+        margin: 2rem 0;
+        display: block;
+        color: $blanco;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    .enlace{
+        font-size: 1.8rem;
+        text-align: left;
+        text-transform: initial;
+        font-weight: 500; 
+        color: $grisClaro;
+        display: none;
+        font-family: $fuentePrincipal;
+
+        @include tablet{
             display: block;
         }
-        
     }
 }
 
@@ -25,9 +47,25 @@ footer{
         align-items: center;
         margin-top: 0;
 
+        .contenedor-redes{
+            svg{
+                width: 2.5rem;
+            
+                @include tablet{
+                    margin-right: 1rem;
+                    width: 4rem;
+                }
+            }
+        }
+
         P{
             margin: 0;
+            font-size: 1.8rem;
             color: $blanco;
+
+            @include tablet{
+                font-size: 2rem;
+            }
         }
     }
 }
