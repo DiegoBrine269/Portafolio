@@ -53,6 +53,7 @@
         }
 
         .btn{
+            text-align: center;
             width: 35%;
             @include tablet{
                 width: 60%;

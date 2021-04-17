@@ -1793,6 +1793,7 @@ main {
   margin: 2rem;
 }
 .proyectos .proyecto .btn {
+  text-align: center;
   width: 35%;
   margin: 0 2rem 2rem auto;
   background-color: #00978D;
@@ -1850,4 +1851,33 @@ main {
   width: 30rem;
   display: flex;
   justify-content: space-between;
+}
+
+.footer-navbar {
+  background-color: #006897;
+}
+.footer-navbar .navbar {
+  margin-bottom: 0;
+  padding: 2rem 0;
+}
+.footer-navbar .navbar a {
+  text-align: left;
+  margin: 2rem 0;
+  display: block;
+}
+
+footer {
+  border-top: 3px solid #FFF;
+  padding: 1.5rem 0;
+  background-color: #006897;
+}
+footer .contenido-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+footer .contenido-footer P {
+  margin: 0;
+  color: #FFF;
 }

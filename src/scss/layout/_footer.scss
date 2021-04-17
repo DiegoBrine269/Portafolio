@@ -1,0 +1,33 @@
+.footer-navbar{
+    background-color: $azulOscuro;
+
+    .navbar{
+        margin-bottom: 0;
+        padding: 2rem 0;        
+
+        a{
+            text-align: left;
+            margin: 2rem 0;
+            display: block;
+        }
+        
+    }
+}
+
+footer{
+    border-top: 3px solid $blanco;
+    padding: 1.5rem 0;
+    background-color: $azulOscuro;
+
+    .contenido-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+
+        P{
+            margin: 0;
+            color: $blanco;
+        }
+    }
+}
