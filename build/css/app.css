@@ -1921,3 +1921,20 @@ footer .contenido-footer P {
     font-size: 2rem;
   }
 }
+
+.inicio-proyecto {
+  height: 0;
+  min-height: 13rem;
+  display: block;
+}
+
+.contenedor-proyecto {
+  margin-top: 3rem;
+}
+.contenedor-proyecto h1 {
+  margin: 3rem 0;
+  text-align: center;
+}
+.contenedor-proyecto p {
+  text-align: justify;
+}
