@@ -1988,6 +1988,11 @@ footer .contenido-footer P {
     height: 12rem;
   }
 }
+@media (min-width: 1200px) {
+  .galeria-imagenes li img {
+    height: 100%;
+  }
+}
 
 .overlay {
   position: fixed;
