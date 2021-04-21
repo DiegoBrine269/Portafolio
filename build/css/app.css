@@ -1976,11 +1976,16 @@ footer .contenido-footer P {
   cursor: pointer;
 }
 .galeria-imagenes li img {
-  height: 10rem;
+  height: 8rem;
+}
+@media (min-width: 480px) {
+  .galeria-imagenes li img {
+    height: 10rem;
+  }
 }
 @media (min-width: 768px) {
   .galeria-imagenes li img {
-    height: 14.5rem;
+    height: 12rem;
   }
 }
 
