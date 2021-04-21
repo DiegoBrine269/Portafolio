@@ -6,6 +6,7 @@ let imgTablet = document.querySelector('#img-tablet')
 
 document.addEventListener("DOMContentLoaded", function(event) {
     
+
     
 
     // Look for .hamburger
@@ -20,11 +21,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
+    //Añadimos el evento On click
+    hamburger.addEventListener("click", function() {
+    
+        hamburger.classList.toggle("is-active");
+
+        if(hamburger.classList.contains('is-active')){
+            mostrarMenu()
+        }
+        else{
+            ocultarMenu()
+        }
+    })
+
     
 
     //Cada que cambia el tamaño, cambia las clases del botón y del menú
     window.addEventListener('resize', function(){
+
+        if (window.matchMedia("(max-width: 767px)").matches){ 
+            //Aquí había un bug, cuando se abría el menú y leugo se cambiaba a tablet, y luego a phone, desaparecía el menú, pero el boyón seguí en x
+            ocultarMenu()
+            
+            if(hamburger.classList.contains("is-active")){
+                hamburger.classList.toggle("is-active")
+            }
+            
+
+        }
+        else{
+            mostrarMenu()
+        }
+
+        //Cambiamos la imagen que deseamos mostrar, en función al tamaño de pantalla
+
         margenSuperior = main.style.marginTop
+
+
 
         //Mostrar u ocultar imagen
         let dispositivo = 'phone'
@@ -48,38 +81,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             
             
 
-        if (window.matchMedia("(max-width: 767px)").matches){ 
-            //Aquí había un bug, cuando se abría el menú y leugo se cambiaba a tablet, y luego a phone, desaparecía el menú, pero el boyón seguí en x
-            ocultarMenu()
-            
-            if(hamburger.classList.contains("is-active")){
-                hamburger.classList.toggle("is-active")
-            }
-            
-
-        }
-        else{
-            mostrarMenu()
-        }
-
-        //Cambiamos la imagen que deseamos mostrar, en función al tamaño de pantalla
 
 
     
     }, true)
 
-    //Añadimos el evento On click
-    hamburger.addEventListener("click", function() {
-        
-        hamburger.classList.toggle("is-active");
 
-        if(hamburger.classList.contains('is-active')){
-            mostrarMenu()
-        }
-        else{
-            ocultarMenu()
-        }
-    })
 
 
 
@@ -137,7 +144,6 @@ function tamVentana() {
 
 function scrollNav(){
     const enlaces = menu.querySelectorAll('a')
-
     
     enlaces.forEach( enlace => {
         enlace.addEventListener('click', function(e){

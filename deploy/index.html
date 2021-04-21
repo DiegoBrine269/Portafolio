@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio | Diego Oloarte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="./build/css/app.css" rel="stylesheet">
 </head>
     <body>
-
+        <script src="./build/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
         <div class="inicio">
             <header class="header">   
                 <section class="contenedor contenido-header"> 
@@ -26,12 +30,11 @@
                     </nav>
                 </section>
             </header>
-
                 
             <div class="contenedor presentacion">
-                <img class="imagen-programador" src="./build/img/programador.svg" alt="Imagen de programador">
-                <div class="presentacion-info">
-                    <p>Soy un estudiante de Ingeniería en Sistemas Computacionales, ¿quieres saber qué puedo hacer? Haz scroll en esta página.</p>
+                <img class="imagen-programador animate__animated animate__fadeInLeft" src="./build/img/programador.svg" alt="Imagen de programador">
+                <div class="presentacion-info animate__animated animate__fadeInRight">
+                    <p class="">Soy un estudiante de Ingeniería en Sistemas Computacionales, ¿quieres saber qué puedo hacer? Haz scroll en esta página.</p>
                     <div class="contenedor-botones">
                         <a target="_blank" href="https://wa.me/5215581291428?text=Hola,%20Diego.%20Acabo%20de%20revisar%20tu%20portafolio." class="btn">Contrátame</a>
                         <a href="./download/González Oloarte Diego Enrique CV - English.pdf" download="González Oloarte Diego Enrique CV" class="btn btn-secondary">Descargar CV</a>
@@ -63,19 +66,19 @@
 
         <main>
             <section class="contenedor-2" id="contenedor-presentacion">
-                <h2>Presentación</h2>
+                <h2 class="wow animate__animated animate__fadeInLeft">Presentación</h2>
                 <div class="presentacion-formal">
-                    <div class="presentacion-texto">
-                        <p>
+                    <div class="presentacion-texto ">
+                        <p class="wow animate__animated animate__fadeInLeft">
                             Mi nombre es Diego Enrique González Oloarte,
                             soy originario de la CDMX, tengo 19 años y estudio
                             Ingeniería en Sistemas Computacionales en la Escuela 
                             Superior de Cómputo del IPN. 
                         </p>
 
-                        <img id="img-phone" src="./build/img/foto-diploma.png" alt="">
+                        <img id="img-phone" src="./build/img/foto-diploma.png" alt="" class="wow animate__animated animate__fadeInRight">
                         
-                        <div class="pasatiempos">
+                        <div class="pasatiempos wow animate__animated animate__fadeInLeft">
                             <h3>Pasatiempos e intereses:</H3>
                             <div class="pasatiempos-iconos">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bike" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -110,15 +113,15 @@
                             </div>
                         </div>
                     </div>    
-                    <img class="img-oculta" id="img-tablet" src="./build/img/foto-diploma.png" alt="">
+                    <img class="img-oculta" id="img-tablet" src="./build/img/foto-diploma.png" alt="" class="wow animate__animated animate__fadeInRight">
                 </div>
             </section>
 
             <section class="contenedor-2" id="contenedor-servicios">
                 <h2>Servicios</h2>
                 <div class="servicios">
-                    <div class="servicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="servicio wow animate__animated animate__slideInRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps " width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="6" height="6" rx="1" />
                             <rect x="4" y="14" width="6" height="6" rx="1" />
@@ -138,7 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="servicio">
+                    <div class="servicio wow animate__animated animate__slideInRight">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M3 5h6v14h-6z" />
@@ -160,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="servicio">
+                    <div class="servicio wow animate__animated animate__slideInRight">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
@@ -190,32 +193,32 @@
                     diversos proyectos, los siguientes tres proyectos son los más sobresalientes:
                 </p>
 
-                <div class="proyectos">
+                <div class="proyectos wow animate__animated animate__fadeIn">
                     <div class="proyecto">
                         <div class="img-proyecto" id="img-proyecto-1">
                         </div>
                         <h3 class="proyecto-titulo">
                             Punto de venta para purificadoras de agua
                         </h3>
-                        <a target="_blank" class="btn">Leer más</a>
+                        <a class="btn" href="proyecto-1.html">Leer más</a>
                     </div>
 
-                    <div class="proyecto">
+                    <div class="proyecto wow animate__animated animate__fadeIn">
                         <div class="img-proyecto" id="img-proyecto-2">
                         </div>
                         <h3 class="proyecto-titulo">
                             Sistema para gestión de inventarios de tlapalerías
                         </h3>
-                        <a target="_blank" class="btn">Leer más</a>
+                        <a class="btn" href="proyecto-2.html">Leer más</a>
                     </div>
 
-                    <div class="proyecto">
+                    <div class="proyecto wow animate__animated animate__fadeIn">
                         <div class="img-proyecto" id="img-proyecto-3">
                         </div>
                         <h3 class="proyecto-titulo">
                             Agenda automatizada para ésteticas
                         </h3>
-                        <a target="_blank" href="https://esteticapp.netlify.app/" class="btn">Leer más</a>
+                        <a target="_blank" href="https://esteticapp.netlify.app/" class="btn">Visitar sitio</a>
                     </div>
                 </div>
             </section>
@@ -289,7 +292,7 @@
                 <div class="navbar">
                     <div class="footer-group">
                         <a class="titulo-enlace" href="#contenedor-presentacion">Inicio</a>
-                        <a class="enlace" href="#presentacion-formal">Presentación</a>
+                        <a class="enlace" href="#contenedor-presentacion">Presentación</a>
                     </div>
                     
                     <div class="footer-group">
@@ -301,9 +304,9 @@
 
                     <div class="footer-group">
                         <a class="titulo-enlace" href="#contenedor-proyectos">Proyectos</a>
-                        <a class="enlace" href="#proyectos">Punto de venta para purificadoras de agua</a>
-                        <a class="enlace" href="#proyectos">Sistema para gestión de inventarios de tlapalerías</a>
-                        <a class="enlace" href="#proyectos">Agenda automatizada para ésteticas</a>
+                        <a class="enlace" href="./proyecto-1.html">Punto de venta para purificadoras de agua</a>
+                        <a class="enlace" href="./proyecto-2.html">Sistema para gestión de inventarios de tlapalerías</a>
+                        <a class="enlace" href="https://esteticapp.netlify.app/">Agenda automatizada para ésteticas</a>
                     </div>
 
                     <div class="footer-group">
@@ -339,8 +342,8 @@
                 </p>
             </div>
         </footer>
-    
         
         <script src="./build/js/bundle.js"></script>
+
     </body>
 </html>
