@@ -16,10 +16,18 @@
         }
 
         img{
-            height: 10rem;
-            @include tablet{
-                height: 14.5rem;
+            height: 8rem;
 
+            @include phone{
+                height: 10rem;
+            }
+
+            @include tablet{
+                height: 12rem;
+            }
+
+            @include desktop{
+                height: 100%;
             }
         }
     }

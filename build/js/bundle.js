@@ -6,14 +6,9 @@ let imgTablet = document.querySelector('#img-tablet')
 
 document.addEventListener("DOMContentLoaded", function(event) {
     
-
-    
-
     // Look for .hamburger
     let hamburger = document.querySelector(".hamburger");
     
-
-
     //Si es mayor, que se meuestre el menu
     if (window.matchMedia("(min-width: 767px)").matches){
         mostrarMenu()
@@ -91,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     scrollNav()
-
+    calcularEdad ()
 
 });
 
@@ -156,4 +151,33 @@ function scrollNav(){
             })
         })
     })
+}
+
+/*
+    Calcula qué edad tengo, tomando en cuenta si ya pasó mi cumpleaños
+*/
+function calcularEdad () {
+    const spanEdad = document.querySelector('.anios')
+    let edad = 0;
+
+    if(spanEdad != undefined){
+        const fechaNacimiento = new Date("08/06/2001")
+        const diaNacimiento = fechaNacimiento.getDate()
+        const mesNacimiento = fechaNacimiento.getMonth()+1
+        const anioNacimiento = fechaNacimiento.getFullYear()
+
+        const hoy = new Date()
+
+        const diaActual = hoy.getDate()
+        const mesActual = hoy.getMonth()+1
+
+        edad = hoy.getFullYear() - anioNacimiento
+
+        if(diaActual <= diaNacimiento && mesActual <= mesNacimiento)
+            edad --;
+
+        spanEdad.innerText = edad
+    
+
+    }
 }
